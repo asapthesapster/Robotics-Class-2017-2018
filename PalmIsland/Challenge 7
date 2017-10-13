@@ -1,0 +1,37 @@
+//Robot has to navigate the boardwalk with swing turns
+//Ana Sapp, Buggybot, Challenge 7
+
+task main()
+{
+	motor[motorB]=100; //robot goes forward at full power for 700 milliseconds
+	motor[motorC]=100;
+	wait1Msec(700);
+
+	nMotorEncoder[motorB]=0; //reset motor encoder values
+	nMotorEncoder[motorC]=0;
+
+	while (nMotorEncoder[motorB]<940) //while encoder is less than 940 
+	{
+		motor[motorB]=45; //right swing turn
+		motor[motorC]=90;
+	}
+
+	motor[motorB]=100; //robot goes forward at full power for half a second
+	motor[motorC]=100;
+	wait1Msec(500);
+
+	nMotorEncoder[motorB]=0; //reset motor encoder values
+	nMotorEncoder[motorC]=0;
+
+	while (nMotorEncoder[motorB]<1700) //while encoder is less than 1700
+	{
+		motor[motorB]=100; //left swing turn
+		motor[motorC]=59;
+	}
+
+	motor[motorB]=100;  // robot goes forward at full power for 250 milliseconds
+	motor[motorC]=100;
+	wait1Msec(250);
+
+
+}
