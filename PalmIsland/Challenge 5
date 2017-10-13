@@ -1,0 +1,52 @@
+//robot drives onto dock and land to gather coconuts
+//Ana Sapp, Buggy Bot, Challenge 5
+task main()
+{
+
+nMotorEncoder[motorB]=0; //values of encoders are reset
+nMotorEncoder[motorC]=0;
+
+	while(nMotorEncoder[motorB]<980) //while encoder B is less than 980
+	{
+		motor[motorB]=70; //goes forward at 70% speed
+		motor[motorC]=70;
+	}
+
+nMotorEncoder[motorB]=0; //values of encoders are reset
+nMotorEncoder[motorC]=0;
+
+	while(nMotorEncoder[motorB]> -150) //while encoder B is greater than -150
+	{
+		motor[motorB]=-70; //right point turn at 70% speed
+		motor[motorC]=70;
+	}
+
+nMotorEncoder[motorB]=0; //values of encoders are reset
+nMotorEncoder[motorC]=0;
+
+	while(nMotorEncoder[motorB]<580) //while encoder B is less than 580
+	{
+		motor[motorB]=70; //goes forward at 70% speed
+		motor[motorC]=70;
+	}
+
+nMotorEncoder[motorB]=0; //values of encoders are reset
+nMotorEncoder[motorC]=0;
+
+	while(nMotorEncoder[motorB]> -285) //while encoder B is greater than -285
+	{
+		motor[motorB]=-70; //right point turn at 70% speed
+		motor[motorC]=70;
+	}
+
+nMotorEncoder[motorB]=0; //values of encoders are reset
+nMotorEncoder[motorC]=0;
+
+	while(nMotorEncoder[motorB]<2675) //while encoder B is less than 2675
+	{
+		motor[motorB]=70; //goes forward at 70% speed
+		motor[motorC]=70;
+	}
+
+
+}
