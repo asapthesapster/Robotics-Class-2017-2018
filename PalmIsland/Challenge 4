@@ -1,0 +1,72 @@
+//Robot drives onto both docks
+//Ana Sapp, Buggy Bot, Challenge 4
+
+task main()
+{
+
+nMotorEncoder[motorB]=0; //reset values of motor encoders to zero
+nMotorEncoder[motorC]=0;
+
+	while(nMotorEncoder[motorB]<150) //while encoder is less than 150
+	{
+		motor[motorB]=50;  //goes forward at 50% power
+		motor[motorC]=50;
+	}
+
+nMotorEncoder[motorB]=0; //reset values of motor encoders
+nMotorEncoder[motorC]=0;
+
+	while(nMotorEncoder[motorB] >-50)//while encoderB is greater than -50
+	{
+		motor[motorB]=-50;  //right point turn
+		motor[motorC]=50;
+	}
+
+nMotorEncoder[motorB]=0; //reset values of motor encoders to zero
+nMotorEncoder[motorC]=0;
+
+		while(nMotorEncoder[motorB]<3350) //while encoder is less than
+	{
+		motor[motorB]=50;  //goes forward at 50% power
+		motor[motorC]=50;
+	}
+
+
+nMotorEncoder[motorB]=0; //reset values of motor encoders to zero
+nMotorEncoder[motorC]=0;
+
+		while(nMotorEncoder[motorB]>-2150) //while encoder is greater than  -2150
+	{
+		motor[motorB]=-50;  //goes backwards at 50% power
+		motor[motorC]=-50;
+	}
+
+nMotorEncoder[motorB]=0; //reset values of motor encoders
+nMotorEncoder[motorC]=0;
+
+	while(nMotorEncoder[motorB] >-170)//while encoderB is greater than -50
+	{
+		motor[motorB]=-50;  //right point turn
+		motor[motorC]=50;
+	}
+
+nMotorEncoder[motorB]=0; //reset values of motor encoders to zero
+nMotorEncoder[motorC]=0;
+
+		while(nMotorEncoder[motorB]<2150) //while encoder is less than 2150
+	{
+		motor[motorB]=50;  //goes forward at 50% power
+		motor[motorC]=50;
+	}
+
+nMotorEncoder[motorB]=0; //reset values of motor encoders to zero
+nMotorEncoder[motorC]=0;
+
+		while(nMotorEncoder[motorB]>-2150) //while encoder is greater than  -2150
+	{
+		motor[motorB]=-50;  //goes backwards at 50% power
+		motor[motorC]=-50;
+	}
+
+
+}
