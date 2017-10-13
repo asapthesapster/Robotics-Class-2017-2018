@@ -1,0 +1,67 @@
+//drive forward and make right turn and drive forward
+//Ana Sapp, Buggy Bot, Challenge 3
+
+task main()
+{
+
+	nMotorEncoder[motorB]=0; //motor encoders are reset
+	nMotorEncoder[motorC]=0;
+
+	while(nMotorEncoder[motorB] < 490) //while encoderB is less than 490
+	{
+		motor[motorB]=50;
+		motor[motorC]=50;
+	}
+
+		motor[motorB]=0;  //Turn off motorB
+		motor[motorC]=0;   //Turn off motorC
+
+		nMotorEncoder[motorB]=0; //motor encoders are reset
+		nMotorEncoder[motorC]=0;
+
+	while(nMotorEncoder[motorB] > -100) //while encoderB is greater than -100
+		{
+		motor[motorB]=-40;
+		motor[motorC]=40;
+		}
+
+		motor[motorB]=0;  //Turn off motorB
+		motor[motorC]=0;   //Turn off motorC
+
+		nMotorEncoder[motorB]=0; //motor encoders are reset
+		nMotorEncoder[motorC]=0;
+
+	while(nMotorEncoder[motorB] < 1624.2) //while encoderB is less than 1624.2
+	{
+		motor[motorB]=50;
+		motor[motorC]=50;
+	}
+
+		motor[motorB]=0;  //Turn off motorB
+		motor[motorC]=0;   //Turn off motorC
+
+		nMotorEncoder[motorB]=0; //motor encoders are reset
+		nMotorEncoder[motorC]=0;
+
+
+		nMotorEncoder[motorB]=0; //motor encoders are reset
+		nMotorEncoder[motorC]=0;
+
+	nMotorEncoder[motorB]=0; //motor encoders are reset
+	nMotorEncoder[motorC]=0;
+
+	while(nMotorEncoder[motorB] < 60) //while encoderB is less than 60
+	{
+		motor[motorB]=50;
+		motor[motorC]=50;
+	}
+
+		motor[motorB]=0;  //Turn off motorB
+		motor[motorC]=0;   //Turn off motorC
+
+		nMotorEncoder[motorB]=0; //motor encoders are reset
+		nMotorEncoder[motorC]=0;
+
+
+
+}
