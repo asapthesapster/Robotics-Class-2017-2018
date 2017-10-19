@@ -1,0 +1,50 @@
+task main()
+{
+
+nMotorEncoder[motorB]=0; //reset values of encoders
+nMotorEncoder[motorC]=0;
+
+	while(nMotorEncoder[motorB]<1630) //while encoderB is less than 1630
+	{
+		motor[motorB]=100; //robot goes forward at full power
+		motor[motorC]=100;
+	}
+
+nMotorEncoder[motorB]=0; //reset values of encoders
+nMotorEncoder[motorC]=0;
+
+	while(nMotorEncoder[motorB]>-130) //while encoderB is greater than -130
+	{
+		motor[motorB]=-100; //robot
+		motor[motorC]=100;
+	}
+
+nMotorEncoder[motorB]=0; //reset values of encoders
+nMotorEncoder[motorC]=0;
+
+	while(nMotorEncoder[motorB]<530) //while encoderB is less than
+	{
+		motor[motorB]=100; //robot goes forward at full power
+		motor[motorC]=100;
+	}
+
+nMotorEncoder[motorB]=0; //reset values of encoders
+nMotorEncoder[motorC]=0;
+
+	while(nMotorEncoder[motorB]>-316) //while encoderB is greater than -130
+	{
+		motor[motorB]=-100; //robot
+		motor[motorC]=100;
+	}
+
+nMotorEncoder[motorB]=0; //reset values of encoders
+nMotorEncoder[motorC]=0;
+
+	while(nMotorEncoder[motorB]<2500) //while encoderB is less than 1630
+	{
+		motor[motorB]=100; //robot goes forward at full power
+		motor[motorC]=100;
+	}
+
+
+}
