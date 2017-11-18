@@ -5,20 +5,20 @@
 task main()
 {
 
-motor[motorB]=100;
+motor[motorB]=100; //move forward at full power for half a second
 motor[motorC]=100;
 wait1Msec(500);
 
-motor[motorB]=100;
+motor[motorB]=100; //left point turn for 70 milliseconds
 motor[motorC]=0;
 wait1Msec(70);
 
-motor[motorB]=100;
+motor[motorB]=100; //move forward at full power for about half a second
 motor[motorC]=100;
 wait1Msec(580);
 
 
-	clearTimer(T1);
+	clearTimer(T1); //clear timer
 
 	while(time1(T1)<7300) //will loop for 7.3 seconds
 
@@ -33,19 +33,19 @@ wait1Msec(580);
 		motor[motorC]=50;
 	}
 
-motor[motorB]=100;
+motor[motorB]=100; //moves forward at full power for about a second
 motor[motorC]=100;
 wait1Msec(950);
 
-motor[motorB]=0;
+motor[motorB]=0; //makes right point turn for half a second
 motor[motorC]=100;
 wait1Msec(500);
 
-motor[motorB]=50;
+motor[motorB]=50; //moves forward at half power for 800 milliseconds
 motor[motorC]=50;
 wait1Msec(800);
 
-clearTimer(T1);
+clearTimer(T1); //timer is cleared
 
 while(time1(T1)<3100) //will loop for 3.1 seconds
 
@@ -60,62 +60,97 @@ while(time1(T1)<3100) //will loop for 3.1 seconds
 		motor[motorC]=50;
 	}
 
-motor[motorB]=50;
+motor[motorB]=50; //moves forward at half power for half a second
 motor[motorC]=50;
 wait1Msec(500);
 
-motor[motorB]=50;
+motor[motorB]=50; //makes left point turn for 300 milliseconds at half power
 motor[motorC]=0;
 wait1Msec(300);
 
-motor[motorB]=50;
+motor[motorB]=50; //moves forward at half power for 700 milliseconds
 motor[motorC]=50;
 wait1Msec(700);
 
-motor[motorB]=0;
+motor[motorB]=0; //makes right point turn for about a second at half power
 motor[motorC]=50;
 wait1Msec(900);
 
-motor[motorB]=50;
+motor[motorB]=50; //moves forward at full power for 1.3 seconds
 motor[motorC]=50;
 wait1Msec(1300);
 
-motor[motorB]=0;
+motor[motorB]=0; //makes right point turn for 670 milliseconds
 motor[motorC]=50;
 wait1Msec(670);
 
-motor[motorB]=50;
+motor[motorB]=50; //moves forward at half power for 2 seconds
 motor[motorC]=50;
 wait1Msec(2000);
 
-while(SensorValue(sonar)>10)
+while(SensorValue(sonar)>10) //robot moves forward half power if robot is above 10 counts
 	{
 		motor[motorB]=50;
 		motor[motorC]=50;
 	}
 		motor[motorB]=-50;
-		motor[motorC]=-50;
+		motor[motorC]=-50; //if terms are not met, robot goes backwards for 1.2 seconds
 		wait1Msec(1200);
 
-motor[motorB]=0;
+motor[motorB]=0; //makes right point turn for 880 milliseconds
 motor[motorC]=50;
 wait1Msec(880);
-
-motor[motorB]=100;
-motor[motorC]=100;
-wait1Msec(3850);
 
 nMotorEncoder[motorB]=0;//reset values of encoders
 nMotorEncoder[motorC]=0;
 
-while(nMotorEncoder[motorB]<720)
+while(nMotorEncoder[motorB]<3200) //robot moves forward half power if robot is above 3200 counts
 {
 	motor[motorB]=50;
+	motor[motorC]=50;
+}
+
+nMotorEncoder[motorB]=0;//reset values of encoders
+nMotorEncoder[motorC]=0;
+
+while(nMotorEncoder[motorB]<320) //robot moves forward half power if robot is above 320 counts
+{
+	motor[motorB]=100;
 	motor[motorC]=0;
 }
-	
 
+nMotorEncoder[motorB]=0;//reset values of encoders
+nMotorEncoder[motorC]=0;
 
+while(nMotorEncoder[motorB]<470) //robot moves forward half power if robot is above 470 counts
+{
+	motor[motorB]=50;
+	motor[motorC]=50;
+}
 
+nMotorEncoder[motorB]=0;//reset values of encoders
+nMotorEncoder[motorC]=0;
 
+while(nMotorEncoder[motorB]<340) //robot moves forward half power if robot is above 340 counts
+{
+	motor[motorB]=100;
+	motor[motorC]=0;
+}
+
+nMotorEncoder[motorB]=0;//reset values of encoders
+nMotorEncoder[motorC]=0;
+
+while(nMotorEncoder[motorB]<1700) //robot moves forward half power if robot is above 1700 counts
+{
+	motor[motorB]=50;
+	motor[motorC]=50;
+}
+
+motor[motorB]=0; //robot makes right point turn for 355 milliseconds
+motor[motorC]=100;
+wait1Msec(355);
+
+motor[motorB]=100; //moves forward at full power for 3 seconds
+motor[motorC]=100;
+wait1Msec(3000);
 }
