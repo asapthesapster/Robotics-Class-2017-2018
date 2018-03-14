@@ -1,0 +1,40 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package anaadventure;
+import java.util.Scanner; //imports the scanner class
+/**
+ *
+ * @author riley.cullen
+ */
+public class AnaAdventure {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+    Scanner keyboard=new Scanner (System.in); //scanner is created
+    
+    String Choice1;
+    String A2;
+    
+    System.out.println("Welcome to the Jungle!");
+    
+    System.out.println("Do you want to go left or right?"); 
+    System.out.print(">"); //answer goes here
+    Choice1=keyboard.next();
+    
+    if (A1.equals("left")) {
+        {
+            System.out.println("You found a nightmonkey in a tree! ");
+            
+        }
+        
+    }
+        
+
+    }
+    
+}
