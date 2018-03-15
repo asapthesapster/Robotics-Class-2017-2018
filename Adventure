@@ -7,7 +7,7 @@ package anaadventure;
 import java.util.Scanner; //imports the scanner class
 /**
  *
- * @author riley.cullen
+ * @author ana-grace.sapp
  */
 public class AnaAdventure {
 
@@ -17,24 +17,80 @@ public class AnaAdventure {
     public static void main(String[] args) {
     Scanner keyboard=new Scanner (System.in); //scanner is created
     
-    String Choice1;
+    String A1;
     String A2;
+    String A3;
+    String A4;
+    String A5;
+    
     
     System.out.println("Welcome to the Jungle!");
     
     System.out.println("Do you want to go left or right?"); 
     System.out.print(">"); //answer goes here
-    Choice1=keyboard.next();
+    A1=keyboard.next();
     
-    if (A1.equals("left")) {
+    if (A1.equals("left")) 
+    {
         {
             System.out.println("You found a nightmonkey in a tree! ");
+            System.out.println("Do you want to 'take a photo' or 'keep walking'?  ");
+            System.out.print(">"); //answer goes here
+            A3=keyboard.next();
             
+            if (A3.equals("take a photo"))
+            {
+                System.out.println("The monkey jumps further away and you miss the shot! ");
+                System.out.println("Do you want to 'change lenses' or 'keep hiking'. ");
+                System.out.print(">"); //answer goes here
+                A4=keyboard.next();
+                    
+                    if (A4.equals("change lenses"))
+                    {
+                       System.out.println("You get the perfect shot and your photo is published! ");
+                    }
+                    
+                    else 
+                    {
+                       System.out.println("You find a molting locust. ");
+                    }
+            }
         }
-        
     }
         
+        else
+        {
+             System.out.println("You found an anole on the bushes! ");
+             System.out.println("Do you want to 'catch the anole' or 'keep walking'. ");
+             System.out.print(">"); //answer goes here
+             A5=keyboard.next();
+             
+             if (A5.equals("catch the anole"))
+             {
+                 System.out.println("You are able to identify the anole. ");
+             }
+             
+                else
+                {
+                     System.out.println("You are able to identify the anole. ");   
+                }
+             
+             
+             
+             }
+             
+        }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    }    
 
     }
     
-}
