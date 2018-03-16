@@ -9,6 +9,7 @@ import java.util.Scanner; //imports the scanner class
  *
  * @author ana-grace.sapp
  */
+//Ana Sapp: Choose your own adventure: a story is created by choosing your own if else statements
 public class AnaAdventure {
 
     /**
@@ -22,75 +23,210 @@ public class AnaAdventure {
     String A3;
     String A4;
     String A5;
+    String A6;
+    String A7;
     
+    String B1;
+    String B2;
+    String B3;
+    String B4;
+    String B5;
+    String B6;
+    String B7;
     
-    System.out.println("Welcome to the Jungle!");
+    System.out.println("Welcome to the Jungle!");  //name of the adventure
     
-    System.out.println("Do you want to go left or right?"); 
+    System.out.println("Do you want to go left or right?"); //Player makes choice
     System.out.print(">"); //answer goes here
-    A1=keyboard.next();
+    A1=keyboard.next(); //player puts in input
     
-    if (A1.equals("left")) 
+    if (A1.equals("left")){ //if statement is created for all of the "left" situations
+    { 
     {
         {
-            System.out.println("You found a nightmonkey in a tree! ");
-            System.out.println("Do you want to 'take a photo' or 'keep walking'?  ");
+            System.out.println("You found a nightmonkey in a tree! "); //Event is told to the player
+            System.out.println("Do you want to 'take a photo' or 'keep walking'?  "); //Player makes choice
             System.out.print(">"); //answer goes here
-            A3=keyboard.next();
+            A3=keyboard.next(); //player puts in input
             
-            if (A3.equals("take a photo"))
+            if (A3.equals("take a photo")) //if statement is created for all of the photo taking situations
             {
-                System.out.println("The monkey jumps further away and you miss the shot! ");
-                System.out.println("Do you want to 'change lenses' or 'keep hiking'. ");
+                System.out.println("The monkey jumps further away and you miss the shot! "); //Event is told to the player
+                System.out.println("Do you want to 'change lenses' or 'keep hiking'. ");  //Player makes choice
                 System.out.print(">"); //answer goes here
-                A4=keyboard.next();
+                A4=keyboard.next();//player puts in input
                     
-                    if (A4.equals("change lenses"))
+                    if (A4.equals("change lenses")){ //if statement is created in case user decides to change lenses
                     {
-                       System.out.println("You get the perfect shot and your photo is published! ");
+                       System.out.println("You get the perfect shot and your photo is published! "); //final conclusion
                     }
                     
-                    else 
+                    else  //other case
                     {
-                       System.out.println("You find a molting locust. ");
+                       System.out.println("You find a molting locust. "); //final conclusion
+                    }
                     }
             }
-        }
-    }
         
-        else
+    
+        
+    else //other case
         {
-             System.out.println("You found an anole on the bushes! ");
-             System.out.println("Do you want to 'catch the anole' or 'keep walking'. ");
+             System.out.println("You found an anole on the bushes! ");  //Event is told to the player
+             System.out.println("Do you want to 'catch the anole' or 'keep walking'. ");//Player makes choice
              System.out.print(">"); //answer goes here
-             A5=keyboard.next();
+             A5=keyboard.next(); //player puts in input
              
-             if (A5.equals("catch the anole"))
-             {
-                 System.out.println("You are able to identify the anole. ");
+             if (A5.equals("catch the anole")){  //if statement created in case user decides to catch an anole
+             { 
+                 System.out.println("You are able to identify the anole. ");  //Event is told to the player
+                 System.out.println("Do you want to 'use a macro lens' or 'wide angle lens' to photograph the anole? "); //Player makes choice
+                 System.out.print(">"); //answer goes here
+                 A6=keyboard.next(); //player puts in input
+                 
+                 if (A6.equals("use macro lens")) //if statement created in case user decides to use a macro lens
+                 {
+                     System.out.println("You are able to photograph the eyes of the anole only a few centimeters away! "); //final conclusion
+                 }
              }
              
-                else
+             else //other case
                 {
-                     System.out.println("You are able to identify the anole. ");   
+                     System.out.println("A termite nest is found on the trail. ");  //Event is told to the player
+                     System.out.println("Do you want to 'eat a termite' or 'keep walking'? ");//Player makes choice
+                     System.out.print(">"); //answer goes here
+                     A7=keyboard.next();//player puts in input
+                     
+                     if (A7.equals("eat a termite")) //if statement is created in case user decides to eat a termite
+                     {
+                         System.out.println("The termite doesn't taste that bad; it just moves when you chew it. ");//final conclusion
+                     }
+                     
+                     else //other case
+                     {
+                         System.out.println("You find an adorable sloth! ");//final conclusion
+                     }
                 }
-             
-             
-             
-             }
-             
+             } 
         }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    }    
-
     }
+    else
+    {
+        System.out.println("You hear a rainfrog in the distance... "); //Event is told to the player
+        System.out.println("Do you want to 'find the frog' or 'get in a boat'? ");//Player makes choice
+        System.out.print(">"); //answer goes here
+        B1=keyboard.next();//player puts in input
+            
+        if (B1.equals("find the frog")) //if statement created in case user decides to find the frog
+            {
+            {
+                System.out.println("The frog jumps to the next leaf! ");//Event is told to the player
+                System.out.println("Do you want to 'photograph the frog' or 'look into the bushes'? ");//Player makes choice
+                System.out.print(">"); //answer goes here
+                B2=keyboard.next();//player puts in input
+                
+                if (B2.equals("photograph the frog")){ //if statement created in case user decides to photograph the frog
+                {
+                    System.out.println("You notice that the frog has strange markings on its side. ");//Event is told to the player
+                    System.out.println("Do you want to take the frog 'to the lodge' or 'just photograph' it? ");//Player makes choice
+                    System.out.print(">"); //answer goes here
+                    B3=keyboard.next();//player puts in input
+                    
+                    if (B3.equals("to the lodge")){ //if statement created in case user decides to take frog to lodge
+                        {   
+                            System.out.println("You study the frog, finding that it has a rare mutation. ");//final conclusion
+                        }
+                        
+                        else
+                         {
+                           System.out.println("Your photos are sent to the Smithsonian for further study. ");//final conclusion
+                         }
+                        
+                    }
+            
+            
+                }
+                }
+            }
+            
+            else
+            {
+              System.out.println("You hear sounds in the bushes and in the grass. ");//Event is told to the player
+              System.out.println("Do you want to look in the 'bushes' or 'grass'? ");//Player makes choice
+              System.out.print(">"); //answer goes here
+              B4=keyboard.next();//player puts in input
+            
+                if (B4.equals("bushes")){ //if statement created in case user decides to look in bushes
+            { 
+                System.out.println("You find a cicada! ");//final conclusion
+            }
+            
+            else 
+            {
+                System.out.println("You find a botfly! ");//final conclusion
+            }
+            
+            
+            
+            }
+              
+            }
+
+            
+            else
+            {
+                System.out.println("The sun starts to set and you start paddling. ");//Event is told to the player
+                System.out.println("Do you want to paddle into the 'middle' of the river or stay near the 'shore'? ");//Player makes choice
+                System.out.print(">"); //answer goes here
+                B5=keyboard.next();//player puts in input
+                    
+                if (B5.equals("middle")){ //if statement created in case user decides to boat to the middle of the river
+                {
+                    System.out.println("You get out your flashlights and look for wildlife. You hear birds. ");
+                    System.out.println("Do you want to shine your light on the 'tree' or in the 'sky'? ");//Player makes choice
+                    System.out.print(">"); //answer goes here
+                    B6=keyboard.next();//player puts in input
+            
+                    if (B6.equals("tree")){ //if statement created in case user decides to look in the tree
+            {
+                 System.out.println("You see a parrot perched in the branches. ");//final conclusion
+            }
+            
+                   else
+                    {
+                        System.out.println("An anhinga soars across the sky. ");//final conclusion
+                    }
+                                        }
+            else 
+            {
+                System.out.println("You graze the side of the river searching for wildlife with your flashlight around a tree. ");//Event is told to the player
+                System.out.println("Do you want to shine your light on the 'top' of the tree or in the lower 'branches'? ");//Player makes choice
+                System.out.print(">"); //answer goes here
+                B7=keyboard.next();//player puts in input
+                
+                if (B7.equals("top")){ //if statement created in case user decides to look in the top of the tree
+                 {
+                    System.out.println("You find the rare pinocchio anole! ");//final conclusion
+                 }
+                 
+                 else
+                {
+                    System.out.println("You spot a black caiman deep in the tree branches near teh water. ");//final conclusion
+                }
+            
+            }
+                
+            }
+                }
+            
+            }
+            }
+            
+            }
+            }
+      }
+    }
+ 
+     
+  
     
