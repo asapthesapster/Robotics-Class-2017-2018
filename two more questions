@@ -34,40 +34,41 @@ public class AnaTwomas {
     System.out.print(">"); //answer goes here
     Q2 = keyboard.next(); //user types in answer
     
-    if (Q1.equals ("inside")&& Q2.equals ("alive")){ //checks to see if  Q1 equals inside and Q2 equals alive, if yes, statement below is read, if not, checks next if statement
+    if (Q1.equals ("inside")&& Q2.equals ("alive")) //checks to see if  Q1 equals inside and Q2 equals alive, if yes, statement below is read, if not, checks next if statement
         {
             System.out.println("Then what else could you be thinking of besides a houseplant?!?");
         }
-    }
     
-    if (Q1.equals ("inside")&& Q2.equals (" nonliving")){ //checks to see if  Q1 equals inside and Q2 equals nonliving, if yes, statement below is read, if not, checks next if statement
+    
+    if (Q1.equals ("inside")&& Q2.equals (" nonliving")) //checks to see if  Q1 equals inside and Q2 equals nonliving, if yes, statement below is read, if not, checks next if statement
         {
             System.out.println("Then what else could you be thinking of besides a houseplant?!?");
         }
+   
+    
+    if (Q1.equals ("outside")&& Q2.equals ("alive")) //checks to see if  Q1 equals outside and Q2 equals alive, if yes, statement below is read, if not, checks next if statement
+    {   
+        System.out.println("Then what else could you be thinking of besides a bison?!?");
+        
     }
     
-    if (Q1.equals ("outside")&& Q2.equals ("alive")){ //checks to see if  Q1 equals outside and Q2 equals alive, if yes, statement below is read, if not, checks next if statement
-            System.out.println("Then what else could you be thinking of besides a bison?!?");
-        }
-    }
-    
-    if (Q1.equals ("outside")&& Q2.equals ("nonliving")){ //checks to see if  Q1 equals outside and Q2 equals nonliving, if yes, statement below is read, if not, checks next if statement
+    if (Q1.equals ("outside")&& Q2.equals ("nonliving")) //checks to see if  Q1 equals outside and Q2 equals nonliving, if yes, statement below is read, if not, checks next if statement
         {
             System.out.println("Then what else could you be thinking of besides a billboard?!?");
         }
-    }
     
-    if (Q1.equals ("both")&& Q2.equals ("alive")){ //checks to see if  Q1 equals both and Q2 equals alive, if yes, statement below is read, if not, checks next if statement
+    
+    if (Q1.equals ("both")&& Q2.equals ("alive")) //checks to see if  Q1 equals both and Q2 equals alive, if yes, statement below is read, if not, checks next if statement
         {
             System.out.println("Then what else could you be thinking of besides a dog?!?");
         }
-    }
+    
         
-    if (Q1.equals ("both")&& Q2.equals ("nonliving")){ //checks to see if  Q1 equals both and Q2 equals nonliving, if yes, statement below is read, if not, checks next if statement
+    if (Q1.equals ("both")&& Q2.equals ("nonliving")) //checks to see if  Q1 equals both and Q2 equals nonliving, if yes, statement below is read, if not, checks next if statement
         {
             System.out.println("Then what else could you be thinking of besides a cellphone?!?");
         }
-    }
+    
          
         
 }
