@@ -1,0 +1,75 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package anatwomas;
+
+/**
+ *
+ * @author ana-grace.sapp
+ */
+import java.util.Scanner;
+public class AnaTwomas {
+
+    /**
+     * @param args the command line arguments
+     */
+    //Ana Sapp: Two more questions: program created to ask questions using only if statements with the && symbol
+    public static void main(String[] args) {
+    Scanner keyboard = new Scanner(System.in); //creates new input object
+    
+    String Q1; 
+    String Q2;
+    
+    System.out.println("TWO MORE QUESTIONS, BABY!");
+        
+    System.out.println("Think of something and I'll try to guess it!");
+    
+    System.out.println("Question 1) Does it stay inside or outside or both?");
+    System.out.print(">"); //answer goes here
+    Q1 = keyboard.next(); //user types in answer
+    
+    System.out.println("Question 2) Is it a living thing or nonliving thing?");
+    System.out.print(">"); //answer goes here
+    Q2 = keyboard.next(); //user types in answer
+    
+    if (Q1.equals ("inside")&& Q2.equals ("alive")){ //checks to see if  Q1 equals inside and Q2 equals alive, if yes, statement below is read, if not, checks next if statement
+        {
+            System.out.println("Then what else could you be thinking of besides a houseplant?!?");
+        }
+    }
+    
+    if (Q1.equals ("inside")&& Q2.equals (" nonliving")){ //checks to see if  Q1 equals inside and Q2 equals nonliving, if yes, statement below is read, if not, checks next if statement
+        {
+            System.out.println("Then what else could you be thinking of besides a houseplant?!?");
+        }
+    }
+    
+    if (Q1.equals ("outside")&& Q2.equals ("alive")){ //checks to see if  Q1 equals outside and Q2 equals alive, if yes, statement below is read, if not, checks next if statement
+            System.out.println("Then what else could you be thinking of besides a bison?!?");
+        }
+    }
+    
+    if (Q1.equals ("outside")&& Q2.equals ("nonliving")){ //checks to see if  Q1 equals outside and Q2 equals nonliving, if yes, statement below is read, if not, checks next if statement
+        {
+            System.out.println("Then what else could you be thinking of besides a billboard?!?");
+        }
+    }
+    
+    if (Q1.equals ("both")&& Q2.equals ("alive")){ //checks to see if  Q1 equals both and Q2 equals alive, if yes, statement below is read, if not, checks next if statement
+        {
+            System.out.println("Then what else could you be thinking of besides a dog?!?");
+        }
+    }
+        
+    if (Q1.equals ("both")&& Q2.equals ("nonliving")){ //checks to see if  Q1 equals both and Q2 equals nonliving, if yes, statement below is read, if not, checks next if statement
+        {
+            System.out.println("Then what else could you be thinking of besides a cellphone?!?");
+        }
+    }
+         
+        
+}
+    
+}
